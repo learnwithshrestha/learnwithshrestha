@@ -2,77 +2,112 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Free Wi-Fi Poster 😄</title>
 
 <style>
-    body {
-        background-color: #f0f0f0;
-        font-family: Arial, sans-serif;
-        text-align: center;
-        padding: 40px;
-    }
 
-    .poster {
-        background: white;
-        padding: 20px;
-        border-radius: 15px;
-        box-shadow: 0 0 15px rgba(0,0,0,0.2);
-        display: inline-block;
-    }
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+}
 
-    img {
-        width: 300px;
-        border-radius: 10px;
-    }
+/* Poster container */
+.poster {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Make monkey face BIG and responsive */
+.poster img {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Text styles */
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.password {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #333;
+    word-wrap: break-word;
+}
+
+.funny {
+    font-size: 16px;
+    margin-top: 12px;
+    color: #666;
+    font-style: italic;
+}
+
+.warning {
+    margin-top: 15px;
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+}
+
+/* Mobile optimization */
+@media (max-width: 480px) {
 
     .title {
-        font-size: 32px;
-        font-weight: bold;
-        margin-top: 15px;
+        font-size: 24px;
     }
 
     .password {
-        font-size: 26px;
-        margin-top: 10px;
-        color: #333;
+        font-size: 18px;
     }
 
     .funny {
-        font-size: 18px;
-        margin-top: 15px;
-        color: #666;
-        font-style: italic;
+        font-size: 14px;
     }
 
     .warning {
-        margin-top: 20px;
-        font-size: 20px;
-        color: red;
-        font-weight: bold;
+        font-size: 16px;
     }
-</style>
 
+    .poster img {
+        width: 95%;
+    }
+
+}
+
+</style>
 </head>
+
 <body>
 
 <div class="poster">
 
-    <img src="monkey.jpg" alt="Funny Monkey">
+    <img src="monkey.png" alt="Funny Monkey">
 
     <div class="title">
         📶 FREE WI-FI AVAILABLE
     </div>
 
     <div class="password">
-        Password: BuyYourOwnData 😄
+        Password: BuyYourOwnData😄
     </div>
 
     <div class="warning">
-        Stop looking. Go buy your data or ask your GF to buy.
+        Stop looking. Go buy data or ask your GF to buy. 😆
     </div>
 
 </div>
 
 </body>
 </html>
-
